@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Policy Rate Profile Preview</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f3f3ef;
+      --text: #151515;
+      --muted: #62625d;
+      --card: #ffffff;
+      --line: #d7d7cf;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 20px 44px;
+    }
+    header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+    h1, h2, p { margin: 0; }
+    h1 { font-size: 28px; letter-spacing: 0; }
+    h2 { font-size: 14px; letter-spacing: 0; text-transform: uppercase; }
+    p, code { color: var(--muted); }
+    code { font-size: 12px; }
+    .theme-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      margin-top: 16px;
+    }
+    .theme-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Policy Rate Profile Preview</h1>
+        <p>Policy Rates: Selected Central Banks / generated from BIS central bank policy rates</p>
+      </div>
+      <code>selected_theme: editorial</code>
+    </header>
+
+      <section class="theme-card">
+        <div class="theme-header">
+          <h2>editorial</h2>
+          <code>policy-rates-editorial.svg</code>
+        </div>
+        <img src="policy-rates-editorial.svg" alt="Policy rates preview using editorial theme">
+      </section>
+
+      <section class="theme-card">
+        <div class="theme-header">
+          <h2>print</h2>
+          <code>policy-rates-print.svg</code>
+        </div>
+        <img src="policy-rates-print.svg" alt="Policy rates preview using print theme">
+      </section>
+
+      <section class="theme-card">
+        <div class="theme-header">
+          <h2>terminal</h2>
+          <code>policy-rates-terminal.svg</code>
+        </div>
+        <img src="policy-rates-terminal.svg" alt="Policy rates preview using terminal theme">
+      </section>
+  </main>
+</body>
+</html>

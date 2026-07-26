@@ -1,0 +1,67 @@
+{
+  "source": {
+    "name": "BIS central bank policy rates",
+    "url": "https://data.bis.org/static/bulk/WS_CBPOL_csv_col.zip",
+    "csv_member": "WS_CBPOL_csv_col.csv",
+    "frequency": "M"
+  },
+  "chart": {
+    "title": "Policy Rates: Selected Central Banks",
+    "subtitle": "Monthly end-of-period rates, percent per year",
+    "months": 48,
+    "selected_theme": "editorial",
+    "credit": {
+      "name": "Alex Dunstan",
+      "profile": "github.com/Alex-Dunstan/policy-rate-profile",
+      "url": "https://github.com/Alex-Dunstan/policy-rate-profile"
+    },
+    "areas": [
+      { "code": "AU", "label": "RBA" },
+      { "code": "US", "label": "Fed" },
+      { "code": "XM", "label": "ECB" },
+      { "code": "GB", "label": "BoE" },
+      { "code": "JP", "label": "BoJ" },
+      { "code": "CN", "label": "China LPR" },
+      { "code": "CA", "label": "BoC" }
+    ]
+  },
+  "output": {
+    "svg": "assets/policy-rates.svg",
+    "cache": "data/policy-rates.json",
+    "metadata": "data/policy-rates.metadata.json",
+    "preview": "preview/policy-rates.html",
+    "preview_dir": "preview"
+  },
+  "themes": {
+    "editorial": {
+      "background": "#ffffff",
+      "plot_background": "#fbfbf8",
+      "text": "#111111",
+      "muted": "#666666",
+      "grid": "#deded8",
+      "axis": "#222222",
+      "accent": "#000000",
+      "colors": ["#111111", "#4f6f8f", "#8a5a44", "#5f7f4f", "#8f6a3d", "#b04b4b", "#6b657c"]
+    },
+    "terminal": {
+      "background": "#080a0b",
+      "plot_background": "#0e1214",
+      "text": "#f2f2e8",
+      "muted": "#9aa199",
+      "grid": "#253033",
+      "axis": "#c9d1c5",
+      "accent": "#f2f2e8",
+      "colors": ["#f2f2e8", "#88c0d0", "#d08770", "#a3be8c", "#ebcb8b", "#bf616a", "#b48ead"]
+    },
+    "print": {
+      "background": "#f7f3ea",
+      "plot_background": "#fffaf0",
+      "text": "#15120d",
+      "muted": "#6c6254",
+      "grid": "#ded2bf",
+      "axis": "#2d261c",
+      "accent": "#15120d",
+      "colors": ["#15120d", "#4b6785", "#7f5539", "#5f6f52", "#9a6b2f", "#9b4a46", "#6a5d73"]
+    }
+  }
+}

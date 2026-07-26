@@ -1,0 +1,36 @@
+name: Update policy profile SVG
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 20 * * 4"
+
+permissions:
+  contents: write
+
+jobs:
+  update-policy-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate SVG and preview data
+        run: python3 scripts/policy_profile.py
+
+      - name: Commit generated policy profile assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/policy-rates.svg data/policy-rates.json data/policy-rates.metadata.json preview/policy-rates.html preview/policy-rates-*.svg
+          if git diff --cached --quiet; then
+            echo "No policy profile changes."
+          else
+            git commit -m "Update policy profile chart"
+            git push
+          fi
