@@ -4,7 +4,7 @@
     "subtitle": "Monthly end-of-period rates, percent per year",
     "title": "Policy Rates: Selected Central Banks"
   },
-  "generated_at": "2026-07-30T20:53:47+00:00",
+  "generated_at": "2026-08-07T00:49:55+00:00",
   "series": [
     {
       "code": "AU",
@@ -16,10 +16,6 @@
       "reference_area": "Australia",
       "source_series": "M:AU",
       "values": [
-        {
-          "month": "2022-07",
-          "value": 1.35
-        },
         {
           "month": "2022-08",
           "value": 1.85
@@ -214,16 +210,12 @@
       "code": "US",
       "label": "Fed",
       "latest": {
-        "month": "2026-06",
+        "month": "2026-07",
         "value": 3.625
       },
       "reference_area": "United States",
       "source_series": "M:US",
       "values": [
-        {
-          "month": "2022-07",
-          "value": 2.375
-        },
         {
           "month": "2022-08",
           "value": 2.375
@@ -411,6 +403,10 @@
         {
           "month": "2026-06",
           "value": 3.625
+        },
+        {
+          "month": "2026-07",
+          "value": 3.625
         }
       ]
     },
@@ -418,16 +414,12 @@
       "code": "XM",
       "label": "ECB",
       "latest": {
-        "month": "2026-06",
+        "month": "2026-07",
         "value": 2.25
       },
       "reference_area": "Euro area",
       "source_series": "M:XM",
       "values": [
-        {
-          "month": "2022-07",
-          "value": 0.5
-        },
         {
           "month": "2022-08",
           "value": 0.5
@@ -615,6 +607,10 @@
         {
           "month": "2026-06",
           "value": 2.25
+        },
+        {
+          "month": "2026-07",
+          "value": 2.25
         }
       ]
     },
@@ -622,16 +618,12 @@
       "code": "GB",
       "label": "BoE",
       "latest": {
-        "month": "2026-06",
+        "month": "2026-07",
         "value": 3.75
       },
       "reference_area": "United Kingdom",
       "source_series": "M:GB",
       "values": [
-        {
-          "month": "2022-07",
-          "value": 1.25
-        },
         {
           "month": "2022-08",
           "value": 1.75
@@ -819,6 +811,10 @@
         {
           "month": "2026-06",
           "value": 3.75
+        },
+        {
+          "month": "2026-07",
+          "value": 3.75
         }
       ]
     },
@@ -826,16 +822,12 @@
       "code": "JP",
       "label": "BoJ",
       "latest": {
-        "month": "2026-06",
+        "month": "2026-07",
         "value": 1.0
       },
       "reference_area": "Japan",
       "source_series": "M:JP",
       "values": [
-        {
-          "month": "2022-07",
-          "value": -0.1
-        },
         {
           "month": "2022-08",
           "value": -0.1
@@ -1023,6 +1015,10 @@
         {
           "month": "2026-06",
           "value": 1.0
+        },
+        {
+          "month": "2026-07",
+          "value": 1.0
         }
       ]
     },
@@ -1036,10 +1032,6 @@
       "reference_area": "China",
       "source_series": "M:CN",
       "values": [
-        {
-          "month": "2022-07",
-          "value": 3.7
-        },
         {
           "month": "2022-08",
           "value": 3.65
@@ -1234,16 +1226,12 @@
       "code": "CA",
       "label": "BoC",
       "latest": {
-        "month": "2026-06",
+        "month": "2026-07",
         "value": 2.25
       },
       "reference_area": "Canada",
       "source_series": "M:CA",
       "values": [
-        {
-          "month": "2022-07",
-          "value": 2.5
-        },
         {
           "month": "2022-08",
           "value": 2.5
@@ -1431,12 +1419,16 @@
         {
           "month": "2026-06",
           "value": 2.25
+        },
+        {
+          "month": "2026-07",
+          "value": 2.25
         }
       ]
     }
   ],
   "source": {
-    "latest_source_month": "2026-06",
+    "latest_source_month": "2026-07",
     "name": "BIS central bank policy rates",
     "url": "https://data.bis.org/static/bulk/WS_CBPOL_csv_col.zip"
   }
